@@ -1,0 +1,39 @@
+.right-panel{
+    flex: 1;
+    height: 1000px;
+    border-left: 1px dashed #ddd;
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    .sponser{
+        flex: 2;
+        border-bottom: 1px dotted red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Friend-request{
+        flex: 1;
+        border-bottom: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Birth-day{
+        flex: 1;
+        border-bottom: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .online-status{
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

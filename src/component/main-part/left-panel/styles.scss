@@ -1,0 +1,42 @@
+.left-panel{
+    flex: 1;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    overflow: auto;
+    border-right: 1px dashed #ddd;
+    margin-top: 65px;
+
+    .profile{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        padding: 10px;
+
+        &:hover{
+            border-radius: 5px;
+            background-color: #ddd;
+        }
+
+        span{
+            font-weight: bold;
+        }
+
+        .icon{
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: lightyellow;
+        }
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
