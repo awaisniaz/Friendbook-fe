@@ -6,34 +6,210 @@
     flex-direction: column;
     margin-top: 65px;
     .sponser{
-        flex: 2;
-        border-bottom: 1px dotted red;
+        flex: 1;
+        border-bottom: 1px inset #ddd;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+         .sponser-container{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            margin: 5px;
+            border-radius: 10px;
+            padding-right: 10px;
+            column-gap: 10px;
+            &:hover{
+                background-color: #ddd;
+            }
+            .description-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .subtitle-container{
+                    text-align: justify;
+                    height: 50px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .title-container{
+                    font-weight: bold;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                }
+            }
+         }
     }
     .Friend-request{
         flex: 1;
-        border-bottom: 1px solid green;
+        border-bottom: 1px inset #ddd;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .birthday-title{
+            width: 90%;
+            margin: 5px;
+            display: flex;
+            p{
+                font-weight: bold;
+            }
+        }
+
+        .birthday-container{
+            margin: 10px;
+            width: 90%;
+            border-radius: 10px;
+            display: flex;
+            padding: 10px;
+            &:hover{
+                background-color: #ddd;
+            }
+            .avatar{
+                width: 126px;
+                height: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .name-container{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0 10px;
+                width: 80%;
+            span{
+                    font-weight: bold;
+                }
+                }
+                .request-action{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 5px;
+                    .ant-btn{
+                        border-radius: 10px;
+                    }
+                }
+            
+        }
     }
     .Birth-day{
         flex: 1;
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid #ddd;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        .birthday-header-section{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            width: 90%;
+            padding-bottom: 0;
+
+            p{
+                font-weight: bold;
+            }
+        }
+
+        .birthday-container{
+            margin: 10px;
+            width: 90%;
+            border-radius: 10px;
+            display: flex;
+            padding: 10px;
+            &:hover{
+                background-color: #ddd;
+            }
+            .avatar{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .name-container{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0 10px;
+                width: 80%;
+            span{
+                    font-weight: bold;
+                }
+                }
+                .birthlogo{
+                    display: flex;
+                    align-items: center;
+                }
+        }
     }
     .online-status{
         flex: 3;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        //justify-content: center;
         align-items: center;
+        overflow: auto;
+        .search-box-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            font-weight: bold;
+            .Search-box{
+                margin: 10px;
+                width: 70%;
+                height: 40px;
+                border-radius: 20px;
+            }
+        }
+        
+        .Friend-online{
+            margin: 5px;
+            display: flex;
+            border-radius: 5px;
+            width: 90%;
+            padding: 10px;
+            column-gap: 10px;
+            cursor: pointer;
+            align-items: center;
+
+            &:hover{
+                background-color: #ddd;
+            }
+
+            .avatar-container{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: aqua;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                img{
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            .Name{
+                flex: 3;
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+            }
+            .indicator{
+                width: 10px;
+                height: 10px;
+                background-color: green;
+                border-radius: 50%;
+            }
+        }
     }
 }

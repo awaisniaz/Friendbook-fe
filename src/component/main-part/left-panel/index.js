@@ -15,7 +15,7 @@ export default function LeftPanel() {
     },
     {
         icon: <img src="https://img.icons8.com/officexs/16/26e07f/time-machine--v2.png" alt="recent" />,
-        ttile: 'Most Rect'
+        ttile: 'Most Recent'
 
     },
     {
@@ -144,7 +144,9 @@ export default function LeftPanel() {
             </div>
             <div className="option-menu">{
                 action_config.map(item => {
-                    return <div className="profile">
+                    return <div className="profile" onClick={() => {
+                        window.alert(item.ttile)
+                    }} style={{ cursor: 'pointer' }}>
                         {/* <Avatar style={{ backgroundColor: '#87d068' }} icon={item.icon} /> */}
                         <div className="icon">{item.icon}</div>
                         <span>{item.ttile}</span>
