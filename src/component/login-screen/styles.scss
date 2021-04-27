@@ -1,0 +1,87 @@
+.login-container{
+    background-image: url('../../svg-icons/Endless-Constellation.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    .main-container{
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      flex-direction: column;
+      width: 400px;
+      height: fit-content;
+      background-color:rgb(238, 229, 229);
+      .logo{
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 40px;
+          margin: 10px;
+      }
+      .action-btn{
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          align-items: center;
+          .ant-btn{
+              width: 50%;
+              height: 40px;
+              border-radius: 10px;
+              font-weight: bold;
+          }
+      }
+      .input-container{
+          display: flex;
+          flex: 4;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          .login-input
+          {
+              width: 90%;
+          }
+          .name{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              column-gap: 10px;
+
+              .ant-input{
+                  flex: 1;
+                  height: 50px;
+              }
+          }
+          .ant-input{
+            height: 50px;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .mics-action{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 100%;
+            .ant-btn{
+                border: none;
+                background: transparent;
+                font-weight: bold;
+            }
+            .ant-checkbox-wrapper{
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+
+
+      }
+    }
+}

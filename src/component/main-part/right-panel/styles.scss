@@ -11,12 +11,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        .sponser-title{
+            width: 90%;
+            display: flex;
+            span{
+                font-weight: bold;
+            }
+        }
          .sponser-container{
             width: 90%;
             display: flex;
             align-items: center;
             margin: 5px;
-            border-radius: 10px;
             padding-right: 10px;
             column-gap: 10px;
             &:hover{
@@ -91,8 +97,7 @@
                     .ant-btn{
                         border-radius: 10px;
                     }
-                }
-            
+                } 
         }
     }
     .Birth-day{
@@ -114,7 +119,6 @@
                 font-weight: bold;
             }
         }
-
         .birthday-container{
             margin: 10px;
             width: 90%;
@@ -168,8 +172,7 @@
                 height: 40px;
                 border-radius: 20px;
             }
-        }
-        
+        } 
         .Friend-online{
             margin: 5px;
             display: flex;
@@ -183,7 +186,6 @@
             &:hover{
                 background-color: #ddd;
             }
-
             .avatar-container{
                 width: 40px;
                 height: 40px;

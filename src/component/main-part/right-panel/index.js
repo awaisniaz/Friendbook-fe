@@ -11,8 +11,8 @@ export default function RightPanel() {
     const birthday_user = birthdaya.slice(0, 2)
     const randomSponser = Math.floor(Math.random() * 10)
     const promotiondata = sponserdata[randomSponser]
-    
     const [useData, setUserData] = useState(element)
+
     const searchActiveUser = (name) => {
         console.log(name)
         if (name === undefined || name === null || name === '') {
@@ -27,6 +27,7 @@ export default function RightPanel() {
     return (
         <div className="right-panel">
             <div className="sponser">
+                <div className="sponser-title"><span>Sponserships</span></div>
                 <div className="sponser-container">
                     <div className="poster"><img src={promotiondata.photo} alt=""></img></div>
                     <div className="description-container">
@@ -34,7 +35,6 @@ export default function RightPanel() {
                         <div className="subtitle-container">{promotiondata.sentense}</div>
                     </div>
                 </div>
-
             </div>
             <div className="Friend-request">
                 <div className="birthday-title"><p>Upcoming Birthdays</p></div>
@@ -48,7 +48,6 @@ export default function RightPanel() {
                         </div>
                     </div>
                 })
-
                 }
             </div>
             <div className="Birth-day">
@@ -63,7 +62,6 @@ export default function RightPanel() {
                         <div className="birthlogo"><img src="https://img.icons8.com/color/24/000000/birthday.png" alt="" /></div>
                     </div>
                 })
-
                 }
             </div>
             <div className="online-status" onClick={() => {
@@ -74,8 +72,6 @@ export default function RightPanel() {
                         searchActiveUser(e.target.value)
                     }}></Input>
                 </div>
-
-
                 {/* <Empty description="No Online User" /></div> */}
                 {useData.map(item => {
                     return <div className="Friend-online">
@@ -89,10 +85,8 @@ export default function RightPanel() {
                         {item.online && <div className="indicator"></div>}
                     </div>
                 })
-
                 }
             </div>
-
         </div >
     )
 }
